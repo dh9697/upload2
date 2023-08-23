@@ -49,10 +49,7 @@ new Chart(bubble, {
     backgroundColor: 'rgb(67, 206, 215)'},
   ]},
   options: {
-    responsive: false,
-    Legend:{
-      position:top
-    },
+    reponsive: false,
     scales: {
       x:{
         title: {
@@ -70,3 +67,76 @@ new Chart(bubble, {
   }
 });
 
+//line
+var options = {
+  series: [{
+  name: 'Inbound Calls',
+  data: [31, 40, 28, 51, 42, 109, 100]
+}, {
+  name: 'Outbound CallS',
+  data: [11, 32, 45, 32, 34, 52, 41]
+}],
+  chart: {
+  height: 350,
+  type: 'area'
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  curve: 'smooth'
+},
+xaxis: {
+  type: 'datetime',
+  categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+},
+tooltip: {
+  x: {
+    format: 'dd/MM/yy HH:mm'
+  },
+},
+};
+
+var chart = new ApexCharts(document.querySelector("#spline-chart"), options);
+chart.render();
+
+//arealine-chart
+var options = {
+  chart: {
+    height: 280,
+    type: "area"
+  },
+  dataLabels: {
+    enabled: false
+  },
+  series: [
+    {
+      name: "Earings",
+      data: [45, 52, 38, 45, 19, 23, 2]
+    }
+  ],
+  fill: {
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.7,
+      opacityTo: 0.9,
+      stops: [0, 90, 100]
+    }
+  },
+  xaxis: {
+    categories: [
+      "10AM",
+      "10.30AM",
+      "11AM",
+      "11.30AM",
+      "12PM",
+      "1PM",
+      "2PM"
+    ]
+  }
+};
+
+var chart2 = new ApexCharts(document.querySelector("#arealine-chart"), options);
+
+chart2.render();

@@ -386,7 +386,7 @@ background-color: darkblue;
     font-weight: 700;
     color: gray;
 }
-.card-into-tool li{
+.card-into-tool .achievement-list{
     background-color: #ddd;
     padding: 7.6px 12px;
     border-radius: 5px;
@@ -397,7 +397,7 @@ background-color: darkblue;
     flex-wrap: wrap;
     gap: 10px;
 }
-.card-body ul li{
+.card-body ul .achievement-list{
     border: 1px dashed rgb(216, 216, 216);
     border-radius: 5px;
     display: flex;
@@ -428,4 +428,42 @@ tbody tr td figure img{
     height: 100%;
     object-fit: cover;
 }
-
+.arealine-table{
+    width: 100%;
+}
+.arealine-chart-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arealine-chart-list li {
+    background-color: #F1416C;
+    color: white;
+    font-size: 12px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.arealine-date{
+    font-size: 13px;
+    padding: 12px 9px 12px 0;
+    color: #4B5675;
+    font-weight: 600;
+}
+.arealine-dollar{
+    font-size: 13px;
+    padding: 12px 0 12px 9px;
+    font-weight: 600;
+    text-align: end;
+}
+.arealine-updown{
+    font-size: 13px;
+    padding: 12px 0 12px 9px;
+    font-weight: 600;
+    color: green;
+    text-align: end;
+}
+.arealine-updown .down{
+    color: red;
+}
