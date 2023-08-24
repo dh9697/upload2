@@ -241,8 +241,8 @@
                                 <div class="card-header-subtitle">Avarage cost per interaction</div>
                             </div>
                             <div class="card-body-circle-box">
-                                <div>
-                                    <canvas id="bubbleChart" style="width:80vw; height:40vh"></canvas>
+                                <div class="bubble-container" style="position: relative; width: 100vw; height: 35vh;">
+                                    <canvas id="bubbleChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -421,9 +421,25 @@
                                 </ul>
                             </div>
                             <div class="card-body-circle-box">
-                                <!-- <div>
-                                    <canvas id="radarChart"></canvas>
-                                  </div> -->
+                                <div id="chartdiv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-content-cards">
+                    <div class="app-content-card">
+                        <div class="app-content-card-inner">
+                            <div class="card-intro">
+                                <div class="card-intro-title">
+                                    <h3>Human Resources</h3>
+                                    <p>Reports by states and genders</p>
+                                </div>
+                                <ul class="card-into-tool">
+                                    <li>PDF Report</li>
+                                </ul>
+                            </div>
+                            <div class="card-body-circle-box">
+                                <div id="chartdiv2"></div>
                             </div>
                         </div>
                     </div>
@@ -432,6 +448,11 @@
         </div>
     </div>
     </div>
+    <!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
